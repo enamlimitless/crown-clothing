@@ -38,10 +38,12 @@ const Directory = () => {
       ];
       
     return (
+      <div className='homepage'>
         <div className='directory-menu'>
             {
                 sections.map(section => <MenuItem section={section} key={section.id} />)
             }
+        </div>
         </div>
     );
 };
